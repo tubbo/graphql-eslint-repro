@@ -1,0 +1,16 @@
+{
+  "overrides": [
+    {
+      "files": ["*.graphql"],
+      "parser": "@graphql-eslint/eslint-plugin",
+      "plugins": ["@graphql-eslint"],
+      "rules": {
+        "@graphql-eslint/known-fragment-names": "error"
+      },
+      "parserOptions": {
+        "schema": "./schema.graphql",
+        "operations": ["./query.graphql"]
+      }
+    }
+  ]
+}
